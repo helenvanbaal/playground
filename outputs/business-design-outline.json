@@ -1,0 +1,61 @@
+{
+  "title": "Business design",
+  "audience": "Business leaders and practitioners",
+  "purpose": "Introduce the concept and a practical way to apply it",
+  "slides": [
+    {
+      "layout": "title",
+      "mood": "black",
+      "key_message": "Business design connects customer value to sustainable business outcomes.",
+      "visual_element": "none",
+      "title": "Business design",
+      "subtitle": "A practical guide to creating value that works",
+      "notes": "An introductory overview for business leaders and practitioners."
+    },
+    {
+      "layout": "big-statement",
+      "mood": "blue",
+      "key_message": "Business design connects customer value, delivery capability, and sustainable economics.",
+      "visual_element": "none",
+      "title": "Business design connects customer value, delivery capability, and sustainable economics.",
+      "notes": "Business design looks beyond the offer itself. It considers whether people value the offer, whether the organization can reliably deliver it, and whether the economics can sustain it."
+    },
+    {
+      "layout": "three-or-four-column",
+      "key_message": "A coherent business brings customer value, delivery, and economics together.",
+      "visual_element": "none",
+      "title": "Design value, delivery, and economics together",
+      "kicker": "Three dimensions shape one coherent business",
+      "columns": [
+        {
+          "heading": "Customer value",
+          "body": "Solve a meaningful customer need."
+        },
+        {
+          "heading": "Delivery model",
+          "body": "Organize people, partners, and operations."
+        },
+        {
+          "heading": "Business economics",
+          "body": "Create revenue and manage costs."
+        }
+      ],
+      "notes": "These dimensions are interdependent. A compelling proposition must be matched by capabilities and an economic model that can support its delivery."
+    },
+    {
+      "layout": "timeline",
+      "key_message": "Business design turns an initial need into a tested, adaptable model.",
+      "visual_element": "timeline",
+      "title": "Move from insight to a tested business model",
+      "timeline": {
+        "milestones": [
+          { "label": "Understand needs", "size": "big" },
+          { "label": "Frame the offer", "size": "small" },
+          { "label": "Test demand and delivery", "size": "big" },
+          { "label": "Learn and adapt", "size": "small" }
+        ]
+      },
+      "notes": "Treat the sequence as a learning loop, not a one-way handoff. Use evidence from customer conversations and practical tests to refine the offer, its delivery, and its economics."
+    }
+  ]
+}
