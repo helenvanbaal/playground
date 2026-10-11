@@ -22,10 +22,10 @@
     },
     {
       "layout": "Headline + paragraph - white bgr",
-      "key_message": "A coherent business brings customer value, delivery, and economics together.",
+      "key_message": "One business joins value, delivery, and economics.",
       "text": {
-        "0": "Connect value, delivery, economics",
-        "20": "CUSTOMER VALUE  Solve a meaningful customer need.\nDELIVERY MODEL  Organize people, partners, and operations.\nBUSINESS ECONOMICS  Create revenue and manage costs."
+        "0": "One business joins value, delivery, and economics",
+        "20": "VALUE — Meet real needs\nDELIVERY — Organize delivery\nECONOMICS — Sustain the offer"
       },
       "notes": "These dimensions are interdependent. A compelling proposition must be matched by capabilities and an economic model that can support its delivery."
     },

@@ -57,7 +57,10 @@ def main() -> int:
                     f"Slide {slide_number}, placeholder idx={idx}: {len(shape.text)} characters "
                     f"exceed estimated capacity {capacity}"
                 )
-            fill_ratio = len(shape.text) / capacity if capacity else None
+            if metadata.get("fill_basis") == "paragraphs" and metadata.get("max_paragraphs"):
+                fill_ratio = len([p for p in shape.text_frame.paragraphs if p.text.strip()]) / metadata["max_paragraphs"]
+            else:
+                fill_ratio = len(shape.text) / capacity if capacity else None
             threshold = metadata.get("min_fill_ratio")
             if fill_ratio is not None and threshold is not None and fill_ratio < threshold:
                 warnings.append(

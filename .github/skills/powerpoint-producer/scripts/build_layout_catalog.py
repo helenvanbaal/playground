@@ -62,6 +62,18 @@ def main() -> int:
                 columns = max(1, int((shape.width / 914400 * 72) / (estimate_font * 0.52)))
                 lines = max(1, int((shape.height / 914400 * 72) / (estimate_font * 1.25)))
                 estimated_capacity = columns * lines
+            min_fill_ratio = 0.4 if shape.has_text_frame else None
+            fill_basis = "characters"
+            max_paragraphs = None
+            if layout.name.startswith("Title -") and str(shape.placeholder_format.idx) == "10":
+                estimated_capacity = 50
+                min_fill_ratio = 0.05
+            if layout.name in ("Agenda - Simple", "1_Agenda - Simple"):
+                if str(shape.placeholder_format.idx) == "12":
+                    estimated_capacity = 30
+                elif str(shape.placeholder_format.idx) == "15":
+                    fill_basis = "paragraphs"
+                    max_paragraphs = 6
             placeholders[str(shape.placeholder_format.idx)] = {
                 "name": shape.name,
                 "type": str(kind),
@@ -73,7 +85,9 @@ def main() -> int:
                 "image": is_image,
                 "font_size_pt": font_size or (36 if str(kind) == "TITLE (1)" else 18 if shape.has_text_frame else None),
                 "estimated_capacity_chars": estimated_capacity,
-                "min_fill_ratio": 0.4 if shape.has_text_frame else None,
+                "min_fill_ratio": min_fill_ratio,
+                "fill_basis": fill_basis if shape.has_text_frame else None,
+                "max_paragraphs": max_paragraphs,
             }
         result["layouts"][layout.name] = {"placeholders": placeholders}
 

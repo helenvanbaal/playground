@@ -30,7 +30,9 @@
           "image": false,
           "font_size_pt": 100.0,
           "estimated_capacity_chars": 15,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "10": {
           "name": "Platshållare för text 7",
@@ -42,8 +44,10 @@
           "text": true,
           "image": false,
           "font_size_pt": 24.0,
-          "estimated_capacity_chars": 259,
-          "min_fill_ratio": 0.4
+          "estimated_capacity_chars": 50,
+          "min_fill_ratio": 0.05,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -60,7 +64,9 @@
           "image": false,
           "font_size_pt": 100.0,
           "estimated_capacity_chars": 14,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "10": {
           "name": "Platshållare för text 7",
@@ -72,8 +78,10 @@
           "text": true,
           "image": false,
           "font_size_pt": 24.0,
-          "estimated_capacity_chars": 259,
-          "min_fill_ratio": 0.4
+          "estimated_capacity_chars": 50,
+          "min_fill_ratio": 0.05,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -90,7 +98,9 @@
           "image": false,
           "font_size_pt": 100.0,
           "estimated_capacity_chars": 30,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "10": {
           "name": "Platshållare för text 7",
@@ -102,8 +112,10 @@
           "text": true,
           "image": false,
           "font_size_pt": 24.0,
-          "estimated_capacity_chars": 185,
-          "min_fill_ratio": 0.4
+          "estimated_capacity_chars": 50,
+          "min_fill_ratio": 0.05,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -122,8 +134,10 @@
           "text": true,
           "image": false,
           "font_size_pt": 32.0,
-          "estimated_capacity_chars": 54,
-          "min_fill_ratio": 0.4
+          "estimated_capacity_chars": 30,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "15": {
           "name": "Text Placeholder 13",
@@ -136,7 +150,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 1296,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "paragraphs",
+          "max_paragraphs": 6
         }
       }
     },
@@ -152,8 +168,10 @@
           "text": true,
           "image": false,
           "font_size_pt": 32.0,
-          "estimated_capacity_chars": 54,
-          "min_fill_ratio": 0.4
+          "estimated_capacity_chars": 30,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "15": {
           "name": "Text Placeholder 13",
@@ -166,7 +184,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 1296,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "paragraphs",
+          "max_paragraphs": 6
         }
       }
     },
@@ -183,7 +203,9 @@
           "image": false,
           "font_size_pt": 18.0,
           "estimated_capacity_chars": 444,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -200,7 +222,9 @@
           "image": false,
           "font_size_pt": 40.0,
           "estimated_capacity_chars": 78,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 6",
@@ -213,7 +237,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 640,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -230,7 +256,9 @@
           "image": false,
           "font_size_pt": 32.0,
           "estimated_capacity_chars": 32,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 6",
@@ -243,7 +271,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 874,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -260,7 +290,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 276,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "15": {
           "name": "Text Placeholder 6",
@@ -273,7 +305,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 276,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "16": {
           "name": "Text Placeholder 6",
@@ -286,7 +320,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 276,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "17": {
           "name": "Text Placeholder 6",
@@ -299,7 +335,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 13,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "18": {
           "name": "Text Placeholder 6",
@@ -312,7 +350,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 13,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "19": {
           "name": "Text Placeholder 6",
@@ -325,7 +365,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 13,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -338,7 +380,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 348,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -355,7 +399,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 1139,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "14": {
           "name": "Text Placeholder 16",
@@ -368,7 +414,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 117,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "15": {
           "name": "Text Placeholder 6",
@@ -381,7 +429,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 1139,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "0": {
           "name": "Title 1",
@@ -394,7 +444,9 @@
           "image": false,
           "font_size_pt": 36,
           "estimated_capacity_chars": 45,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -411,7 +463,9 @@
           "image": false,
           "font_size_pt": 18.0,
           "estimated_capacity_chars": 444,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "14": {
           "name": "Text Placeholder 6",
@@ -424,7 +478,9 @@
           "image": false,
           "font_size_pt": 18.0,
           "estimated_capacity_chars": 444,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -441,7 +497,9 @@
           "image": false,
           "font_size_pt": 18,
           "estimated_capacity_chars": 330,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "18": {
           "name": "Text Placeholder 22",
@@ -454,7 +512,9 @@
           "image": false,
           "font_size_pt": 18,
           "estimated_capacity_chars": 330,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "19": {
           "name": "Text Placeholder 23",
@@ -467,7 +527,9 @@
           "image": false,
           "font_size_pt": 18,
           "estimated_capacity_chars": 330,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "0": {
           "name": "Title 1",
@@ -480,7 +542,9 @@
           "image": false,
           "font_size_pt": 36,
           "estimated_capacity_chars": 45,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "14": {
           "name": "Text Placeholder 16",
@@ -493,7 +557,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 117,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -510,7 +576,9 @@
           "image": false,
           "font_size_pt": 36,
           "estimated_capacity_chars": 45,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 17",
@@ -523,7 +591,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 630,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 17",
@@ -536,7 +606,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 630,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "21": {
           "name": "Text Placeholder 17",
@@ -549,7 +621,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 630,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "22": {
           "name": "Text Placeholder 17",
@@ -562,7 +636,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 630,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "14": {
           "name": "Text Placeholder 16",
@@ -575,7 +651,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 117,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -595,7 +673,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 2448,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -612,7 +692,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 1224,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 6",
@@ -625,7 +707,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 874,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "14": {
           "name": "Text Placeholder 6",
@@ -638,7 +722,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 112,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -655,7 +741,9 @@
           "image": false,
           "font_size_pt": 32.0,
           "estimated_capacity_chars": 48,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "10": {
           "name": "Picture Placeholder 7",
@@ -668,7 +756,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 1224,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 6",
@@ -681,7 +771,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 874,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -698,7 +790,9 @@
           "image": false,
           "font_size_pt": 18.0,
           "estimated_capacity_chars": 62,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "10": {
           "name": "Picture Placeholder 7",
@@ -711,7 +805,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 1224,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 6",
@@ -724,7 +820,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 874,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -741,7 +839,9 @@
           "image": false,
           "font_size_pt": 18.0,
           "estimated_capacity_chars": 62,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "10": {
           "name": "Picture Placeholder 7",
@@ -754,7 +854,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 816,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 6",
@@ -767,7 +869,9 @@
           "image": false,
           "font_size_pt": 12.0,
           "estimated_capacity_chars": 874,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "26": {
           "name": "Text Placeholder 17",
@@ -780,7 +884,9 @@
           "image": false,
           "font_size_pt": 9.0,
           "estimated_capacity_chars": 720,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -797,7 +903,9 @@
           "image": false,
           "font_size_pt": 40.0,
           "estimated_capacity_chars": 95,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "10": {
           "name": "Picture Placeholder 7",
@@ -810,7 +918,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 1224,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -827,7 +937,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 210,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "21": {
           "name": "Picture Placeholder 3",
@@ -840,7 +952,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 210,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "22": {
           "name": "Picture Placeholder 3",
@@ -853,7 +967,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 210,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "0": {
           "name": "Title 1",
@@ -866,7 +982,9 @@
           "image": false,
           "font_size_pt": 24.0,
           "estimated_capacity_chars": 136,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "14": {
           "name": "Text Placeholder 16",
@@ -879,7 +997,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 117,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 17",
@@ -892,7 +1012,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 392,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "18": {
           "name": "Text Placeholder 22",
@@ -905,7 +1027,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 392,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "19": {
           "name": "Text Placeholder 23",
@@ -918,7 +1042,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 392,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -935,7 +1061,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 510,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "13": {
           "name": "Text Placeholder 17",
@@ -948,7 +1076,9 @@
           "image": false,
           "font_size_pt": 9.0,
           "estimated_capacity_chars": 600,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "23": {
           "name": "Picture Placeholder 3",
@@ -961,7 +1091,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 510,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "24": {
           "name": "Text Placeholder 17",
@@ -974,7 +1106,9 @@
           "image": false,
           "font_size_pt": 9.0,
           "estimated_capacity_chars": 600,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "25": {
           "name": "Picture Placeholder 3",
@@ -987,7 +1121,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 510,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "26": {
           "name": "Text Placeholder 17",
@@ -1000,7 +1136,9 @@
           "image": false,
           "font_size_pt": 9.0,
           "estimated_capacity_chars": 600,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1017,7 +1155,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 266,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Picture Placeholder 3",
@@ -1030,7 +1170,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 161,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "23": {
           "name": "Picture Placeholder 3",
@@ -1043,7 +1185,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 161,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "24": {
           "name": "Picture Placeholder 3",
@@ -1056,7 +1200,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 161,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "25": {
           "name": "Picture Placeholder 3",
@@ -1069,7 +1215,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 161,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "26": {
           "name": "Text Placeholder 6",
@@ -1082,7 +1230,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 266,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "27": {
           "name": "Text Placeholder 6",
@@ -1095,7 +1245,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 266,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "28": {
           "name": "Text Placeholder 6",
@@ -1108,7 +1260,9 @@
           "image": false,
           "font_size_pt": 11.0,
           "estimated_capacity_chars": 266,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "0": {
           "name": "Title 1",
@@ -1121,7 +1275,9 @@
           "image": false,
           "font_size_pt": 24.0,
           "estimated_capacity_chars": 136,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "14": {
           "name": "Text Placeholder 16",
@@ -1134,7 +1290,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 117,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1151,7 +1309,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 2448,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -1164,7 +1324,9 @@
           "image": false,
           "font_size_pt": 14.0,
           "estimated_capacity_chars": 345,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "21": {
           "name": "Text Placeholder 6",
@@ -1177,7 +1339,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 23,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1194,7 +1358,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 2448,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -1207,7 +1373,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 160,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "21": {
           "name": "Text Placeholder 6",
@@ -1220,7 +1388,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 160,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "22": {
           "name": "Text Placeholder 6",
@@ -1233,7 +1403,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 160,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "23": {
           "name": "Text Placeholder 6",
@@ -1246,7 +1418,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 23,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1263,7 +1437,9 @@
           "image": true,
           "font_size_pt": 18,
           "estimated_capacity_chars": 1224,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "21": {
           "name": "Text Placeholder 6",
@@ -1276,7 +1452,9 @@
           "image": false,
           "font_size_pt": 48.0,
           "estimated_capacity_chars": 16,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "22": {
           "name": "Text Placeholder 6",
@@ -1289,7 +1467,9 @@
           "image": false,
           "font_size_pt": 48.0,
           "estimated_capacity_chars": 16,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "23": {
           "name": "Platshållare för text 17",
@@ -1302,7 +1482,9 @@
           "image": false,
           "font_size_pt": 8.0,
           "estimated_capacity_chars": 106,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1322,7 +1504,9 @@
           "image": false,
           "font_size_pt": 60.0,
           "estimated_capacity_chars": 27,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1339,7 +1523,9 @@
           "image": false,
           "font_size_pt": 60.0,
           "estimated_capacity_chars": 27,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1356,7 +1542,9 @@
           "image": false,
           "font_size_pt": 60.0,
           "estimated_capacity_chars": 27,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1373,7 +1561,9 @@
           "image": false,
           "font_size_pt": 60.0,
           "estimated_capacity_chars": 102,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -1386,7 +1576,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 192,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "21": {
           "name": "Platshållare för text 17",
@@ -1399,7 +1591,9 @@
           "image": false,
           "font_size_pt": 8.0,
           "estimated_capacity_chars": 106,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1422,7 +1616,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 23,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -1435,7 +1631,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 160,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1452,7 +1650,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 23,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -1465,7 +1665,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 160,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1482,7 +1684,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 23,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -1495,7 +1699,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 160,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     },
@@ -1512,7 +1718,9 @@
           "image": false,
           "font_size_pt": 70.0,
           "estimated_capacity_chars": 23,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         },
         "20": {
           "name": "Text Placeholder 6",
@@ -1525,7 +1733,9 @@
           "image": false,
           "font_size_pt": 16.0,
           "estimated_capacity_chars": 160,
-          "min_fill_ratio": 0.4
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
         }
       }
     }
