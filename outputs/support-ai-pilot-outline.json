@@ -1,0 +1,111 @@
+{
+  "title": "AI-assisted support pilot",
+  "audience": "Senior leadership team (non-specialists)",
+  "purpose": "Align on whether to fund a pilot",
+  "slides": [
+    {
+      "layout": "Title - Black",
+      "key_message": "Leadership is being asked to decide whether to fund an AI-assisted support pilot.",
+      "text": {
+        "0": "Support pilot",
+        "10": "Funding decision | Senior leadership"
+      },
+      "notes": "Decision requested: approve a 250k EUR, six-month AI-assisted support pilot."
+    },
+    {
+      "layout": "Two columns",
+      "key_message": "Support costs rose as customer satisfaction and response speed fell.",
+      "text": {
+        "0": "Support costs rise as service declines",
+        "14": "Year over year | CSAT scale as provided",
+        "12": "SUPPORT COSTS\nUp 22% year over year",
+        "15": "CUSTOMER EXPERIENCE\nCSAT fell from 84 to 79\nAverage first response: 14 hours"
+      },
+      "notes": "The combined trend creates a reason to test a focused intervention: support costs are rising while satisfaction and response speed are worsening."
+    },
+    {
+      "layout": "Three columns",
+      "key_message": "Repeat questions and document search consume avoidable support capacity.",
+      "text": {
+        "0": "Three signals reveal avoidable support work",
+        "14": "Evidence points to repeat questions and answer-finding friction",
+        "13": "41%\nTickets are repeat questions already answered in the help center",
+        "18": "35%\nAgent time goes to searching internal documents",
+        "19": "6x\nFaster answers on chat; only 18% of tickets arrive there"
+      },
+      "notes": "The chat comparison is relative speed, not a response-time baseline. The 41% figure is the share of all tickets that are repeat help-center questions."
+    },
+    {
+      "layout": "Three columns",
+      "key_message": "The proposed pilot tests a lower-cost path than adding agents.",
+      "text": {
+        "0": "The AI pilot tests a focused middle path",
+        "14": "Compare the three options on cost and stated service impact",
+        "13": "DO NOTHING\nNo added cost\nCosts keep rising",
+        "18": "HIRE 12 AGENTS\nAbout 900k EUR per year\nResponse time improves to about 8h",
+        "19": "AI-ASSISTED PILOT\n250k EUR for 6 months\nTargets: under 4h response; 30% of repeat tickets deflected"
+      },
+      "notes": "The costs and impacts are estimates or targets from the source material, not guaranteed outcomes. No ROI or payback calculation was provided."
+    },
+    {
+      "layout": "Two columns",
+      "key_message": "Customers want a straight answer without repeating themselves.",
+      "text": {
+        "0": "Customers want a straight answer",
+        "14": "Survey quote | Pilot hypothesis to test",
+        "12": "CUSTOMER VOICE\n“I just want a straight answer without having to repeat myself three times.”",
+        "15": "PILOT HYPOTHESIS\nAI assistance could make repeat answers easier to find and provide. Test this with customers and agents."
+      },
+      "notes": "The quotation is reproduced exactly from the supplied survey excerpt. The adjacent statement is a hypothesis for the pilot, not a measured outcome."
+    },
+    {
+      "layout": "Agenda - Simple",
+      "key_message": "A six-month pilot moves from scope through integration to a rollout decision.",
+      "text": {
+        "12": "Pilot in six months",
+        "15": "Month 1 — Select vendor and scope\nMonths 2–3 — Integrate with help center and ticketing\nMonths 4–5 — Run with two support teams\nMonth 6 — Review results and decide on rollout"
+      },
+      "notes": "The month-by-month sequence and pilot team count are from the proposed plan."
+    },
+    {
+      "layout": "Three columns",
+      "key_message": "Quality, adoption, and privacy need explicit checks during the pilot.",
+      "text": {
+        "0": "Three risks need gates before launch",
+        "14": "Proposed checks; confirm owners and criteria before kickoff",
+        "13": "ANSWER QUALITY\nReview edge cases; agree when an agent should take over",
+        "18": "AGENT ADOPTION\nPrepare participating teams and gather feedback during the pilot",
+        "19": "DATA PRIVACY\nComplete privacy review before pilot data is used"
+      },
+      "notes": "The three risks come from the source. The checks are proposed mitigations for leadership and the pilot owner to confirm; no owners, thresholds, or review process were supplied."
+    },
+    {
+      "layout": "Two columns",
+      "key_message": "The pilot tests faster responses and deflection of repeat questions.",
+      "text": {
+        "0": "Pilot success: faster replies, fewer repeats",
+        "14": "Source targets | Baselines shown where provided",
+        "12": "RESPONSE TIME\nCurrent average: 14 hours\nPilot target: under 4 hours",
+        "15": "REPEAT QUESTIONS\n41% currently repeat help-center questions\nPilot target: deflect 30% of repeat tickets"
+      },
+      "notes": "The source does not specify a measurement method, target for answer quality or agent adoption, or a formal decision threshold. Define these before the pilot begins."
+    },
+    {
+      "layout": "Headline only - Blue bgr",
+      "key_message": "Approve the requested 250k EUR pilot.",
+      "text": {
+        "0": "Approve the pilot"
+      },
+      "notes": "Decision requested: approve 250k EUR for a six-month AI-assisted support pilot. The proposed targets are response time under 4 hours and deflection of 30% of repeat tickets."
+    },
+    {
+      "layout": "End slide - Black bgr",
+      "key_message": "Leadership approval enables the team to begin scoping the pilot.",
+      "text": {
+        "21": "Thank you",
+        "20": "Decision requested: approve the 250k EUR pilot"
+      },
+      "notes": "If approved, the proposed first step is to select a vendor and scope during Month 1."
+    }
+  ]
+}
