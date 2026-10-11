@@ -1,0 +1,96 @@
+{
+  "title": "A visit that inspires",
+  "audience": "IKEA retail leadership: store managers and regional directors",
+  "purpose": "Persuade leaders to back a three-store, six-month visitation-model pilot",
+  "slides": [
+    {
+      "layout": "Title - Yellow",
+      "key_message": "Reimagine what an IKEA store visit can be.",
+      "text": {
+        "0": "A visit that inspires",
+        "10": "A new IKEA store model | 3-store pilot proposal"
+      }
+    },
+    {
+      "layout": "Headline + paragraph - white bgr",
+      "key_message": "The current visit is long and tiring, and too many customers leave without what they came for.",
+      "text": {
+        "0": "The list is easy to bring. Finding the thing shouldn't be this hard.",
+        "20": "People visit about three times a year, usually with a list. Visits feel long and tiring. One in three leaves without what they came for. The maze has a purpose—but now it can work against us."
+      }
+    },
+    {
+      "layout": "1_Simple large title+paragraph",
+      "key_message": "Customers want to picture life at home and get help making it work.",
+      "text": {
+        "0": "People come to picture life at home.",
+        "13": "They don't just want to be sold furniture. They want to imagine how life could work in their home—and get help making it real.\n\nThe best moments are simple: a room setting that sparks an idea. A co-worker who listens and helps."
+      }
+    },
+    {
+      "layout": "Three columns",
+      "key_message": "Plan, explore, then take home what you need—with the rest delivered.",
+      "text": {
+        "0": "A new visit, built around you",
+        "14": "Plan. Explore. Take home.",
+        "13": "PLAN\nBook a 45-minute home-planning session online before you visit.",
+        "18": "EXPLORE\nFollow a shorter, guided path through five room inspirations matched to your plan.",
+        "19": "TAKE HOME\nPick up what you need at one point. The rest is delivered."
+      }
+    },
+    {
+      "layout": "1_Simple large title+paragraph",
+      "key_message": "Maya turns a first visit into a useful home plan in 90 minutes.",
+      "text": {
+        "0": "Maya leaves with a plan—not just a bag.",
+        "13": "First home. Living-room photos on her phone.\nA planner helps her make sense of the space.\nThree room settings bring the options to life.\nNinety minutes later, Maya leaves with a plan—and a delivery date."
+      },
+      "notes": "Maya is the illustrative customer scenario supplied in the brief."
+    },
+    {
+      "layout": "three headliner",
+      "key_message": "The pilot aims to make visits shorter while improving commercial and customer outcomes.",
+      "text": {
+        "14": "Visit time",
+        "15": "Visitors book a session",
+        "16": "Basket size",
+        "17": "-30%",
+        "18": "20%",
+        "19": "+10%",
+        "20": "Illustrative pilot targets • NPS +8 points"
+      },
+      "notes": "All metrics on this slide are illustrative pilot targets, not guaranteed outcomes."
+    },
+    {
+      "layout": "Agenda - Simple",
+      "key_message": "Test the model in three deliberate phases over six months.",
+      "text": {
+        "12": "The 6-month pilot",
+        "15": "MONTH 1  Train co-workers\nMONTHS 2–3  Soft launch\nMONTHS 4–6  Full pilot and measure"
+      }
+    },
+    {
+      "layout": "two columns - colorised",
+      "key_message": "The pilot needs store-level sponsorship, trained planners, and an in-app booking tool.",
+      "text": {
+        "13": "PEOPLE\nStore manager sponsors\n12 trained home-planning co-workers per store",
+        "14": "TOOL\nA booking tool in the IKEA app for visitors to reserve a planning session."
+      }
+    },
+    {
+      "layout": "Headline only - Blue bgr",
+      "key_message": "The leadership decision is to back a three-store pilot.",
+      "text": {
+        "0": "Back a 3-store pilot"
+      }
+    },
+    {
+      "layout": "1_End slide - Green",
+      "key_message": "Make visiting IKEA the best part of making a home.",
+      "text": {
+        "21": "Let's make visiting",
+        "20": "IKEA the best part of making a home."
+      }
+    }
+  ]
+}
