@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """Rebuild the skill's base template from a source .pptx/.potx.
 
-The source brand file typically ships as a large demo deck (slide masters and
-layouts plus dozens of example slides full of large photos). This skill only
-needs the masters, layouts, theme, and embedded fonts -- not the demo slides
-or the media they alone reference. This script strips the demo slides and any
-media that only those slides use, producing a small, fast-loading base
-template that still renders pixel-identical layouts in PowerPoint.
+The source brand file typically ships with sample slides. They are retained by
+default as the visual reference for the skill. Pass --strip-slides only when a
+small, layout-only template is specifically needed.
 
 Usage:
     python3 trim_template.py --source "/path/to/Brand Template.pptx" \
@@ -20,7 +17,6 @@ from __future__ import annotations
 
 import argparse
 import re
-import shutil
 import sys
 import zipfile
 from pathlib import Path
@@ -30,6 +26,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", required=True, help="Path to the source .pptx/.potx brand file")
     parser.add_argument("--output", required=True, help="Path to write the trimmed base template")
+    parser.add_argument(
+        "--strip-slides",
+        action="store_true",
+        help="Remove source sample slides (not recommended; they are useful visual references)",
+    )
     args = parser.parse_args()
 
     source_path = Path(args.source).expanduser().resolve()
@@ -42,9 +43,10 @@ def main() -> int:
 
     before_size = sum(len(data) for data in entries.values())
 
-    entries = drop_slides(entries)
+    if args.strip_slides:
+        entries = drop_slides(entries)
+        entries = drop_unreferenced_notes_masters(entries)
     entries = drop_unreferenced_media(entries)
-    entries = drop_unreferenced_notes_masters(entries)
 
     after_size = sum(len(data) for data in entries.values())
 
@@ -122,21 +124,16 @@ def drop_unreferenced_notes_masters(entries: dict[str, bytes]) -> dict[str, byte
 
 
 def drop_unreferenced_media(entries: dict[str, bytes]) -> dict[str, bytes]:
-    """Keep only media referenced by the slide master(s) and slide layouts."""
+    """Keep media referenced by any retained slide, layout, or master."""
     media_names = {n for n in entries if n.startswith("ppt/media/")}
     if not media_names:
         return entries
 
-    referencing_rels = [
-        n
-        for n in entries
-        if re.fullmatch(r"ppt/slideMasters/_rels/.*\.rels", n) or re.fullmatch(r"ppt/slideLayouts/_rels/.*\.rels", n)
-    ]
     used_media: set[str] = set()
-    for rels_name in referencing_rels:
+    for rels_name in (n for n in entries if n.endswith(".rels")):
         rels_xml = entries[rels_name].decode("utf-8")
-        for target in re.findall(r'Target="\.\./media/([^"]+)"', rels_xml):
-            used_media.add(f"ppt/media/{target}")
+        for target in re.findall(r'Target="([^"]*media/[^"]+)"', rels_xml):
+            used_media.add("ppt/media/" + target.rsplit("media/", 1)[1])
 
     unused_media = media_names - used_media
     if not unused_media:

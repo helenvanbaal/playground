@@ -1,0 +1,42 @@
+{
+  "title": "Business design",
+  "audience": "Business leaders and practitioners",
+  "purpose": "Introduce the concept and a practical way to apply it",
+  "slides": [
+    {
+      "layout": "Title - Black",
+      "key_message": "Business design connects customer value to sustainable business outcomes.",
+      "text": {
+        "0": "Business design",
+        "10": "A practical introduction"
+      },
+      "notes": "An introductory overview for business leaders and practitioners."
+    },
+    {
+      "layout": "Headline only - Blue bgr",
+      "key_message": "Design better business.",
+      "text": {
+        "0": "Design better business"
+      },
+      "notes": "Business design looks beyond the offer itself. It considers whether people value the offer, whether the organization can reliably deliver it, and whether the economics can sustain it."
+    },
+    {
+      "layout": "Headline + paragraph - white bgr",
+      "key_message": "One business joins value, delivery, and economics.",
+      "text": {
+        "0": "One business joins value, delivery, and economics",
+        "20": "VALUE — Meet real needs\nDELIVERY — Organize delivery\nECONOMICS — Sustain the offer"
+      },
+      "notes": "These dimensions are interdependent. A compelling proposition must be matched by capabilities and an economic model that can support its delivery."
+    },
+    {
+      "layout": "Agenda - Simple",
+      "key_message": "Business design uses an iterative learning loop.",
+      "text": {
+        "12": "A learning loop",
+        "15": "Understand needs\nFrame the offer\nTest demand and delivery\nLearn and adapt"
+      },
+      "notes": "Treat the sequence as a learning loop, not a one-way handoff. Use evidence from customer conversations and practical tests to refine the offer, its delivery, and its economics."
+    }
+  ]
+}

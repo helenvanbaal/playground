@@ -1,0 +1,1743 @@
+{
+  "schema_version": 1,
+  "template": "base-template.pptx",
+  "capacity_note": "Character capacity and 40% fill checks are heuristic warnings, not rendering guarantees.",
+  "font": "Noto IKEA Latin",
+  "colors": {
+    "blue": "#0058A3",
+    "yellow": "#FFDB00",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "light_grey": "#F0F0F0",
+    "grey": "#575757",
+    "orange": "#F54C22",
+    "green": "#36C336"
+  },
+  "layouts": {
+    ">>>>": {
+      "placeholders": {}
+    },
+    "Title - Black": {
+      "placeholders": {
+        "0": {
+          "name": "Rubrik 1",
+          "type": "TITLE (1)",
+          "x": 198968,
+          "y": 512763,
+          "width": 10238573,
+          "height": 2916237,
+          "text": true,
+          "image": false,
+          "font_size_pt": 100.0,
+          "estimated_capacity_chars": 15,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "10": {
+          "name": "Platshållare för text 7",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 3429000,
+          "width": 5903912,
+          "height": 2791929,
+          "text": true,
+          "image": false,
+          "font_size_pt": 24.0,
+          "estimated_capacity_chars": 50,
+          "min_fill_ratio": 0.05,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Title - White": {
+      "placeholders": {
+        "0": {
+          "name": "Rubrik 1",
+          "type": "TITLE (1)",
+          "x": 198968,
+          "y": 512763,
+          "width": 9874672,
+          "height": 2916237,
+          "text": true,
+          "image": false,
+          "font_size_pt": 100.0,
+          "estimated_capacity_chars": 14,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "10": {
+          "name": "Platshållare för text 7",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 3429000,
+          "width": 5903912,
+          "height": 2791929,
+          "text": true,
+          "image": false,
+          "font_size_pt": 24.0,
+          "estimated_capacity_chars": 50,
+          "min_fill_ratio": 0.05,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Title - Yellow": {
+      "placeholders": {
+        "0": {
+          "name": "Rubrik 1",
+          "type": "TITLE (1)",
+          "x": 198968,
+          "y": 512763,
+          "width": 10249176,
+          "height": 3559175,
+          "text": true,
+          "image": false,
+          "font_size_pt": 100.0,
+          "estimated_capacity_chars": 30,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "10": {
+          "name": "Platshållare för text 7",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 4071938,
+          "width": 5903912,
+          "height": 2148991,
+          "text": true,
+          "image": false,
+          "font_size_pt": 24.0,
+          "estimated_capacity_chars": 50,
+          "min_fill_ratio": 0.05,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    ">>>": {
+      "placeholders": {}
+    },
+    "1_Agenda - Simple": {
+      "placeholders": {
+        "12": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 250517,
+          "y": 551661,
+          "width": 11484000,
+          "height": 908880,
+          "text": true,
+          "image": false,
+          "font_size_pt": 32.0,
+          "estimated_capacity_chars": 30,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "15": {
+          "name": "Text Placeholder 13",
+          "type": "BODY (2)",
+          "x": 235844,
+          "y": 1802904,
+          "width": 11513345,
+          "height": 3240360,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 1296,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "paragraphs",
+          "max_paragraphs": 6
+        }
+      }
+    },
+    "Agenda - Simple": {
+      "placeholders": {
+        "12": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 250517,
+          "y": 551661,
+          "width": 11484000,
+          "height": 908880,
+          "text": true,
+          "image": false,
+          "font_size_pt": 32.0,
+          "estimated_capacity_chars": 30,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "15": {
+          "name": "Text Placeholder 13",
+          "type": "BODY (2)",
+          "x": 235844,
+          "y": 1802904,
+          "width": 11513345,
+          "height": 3240360,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 1296,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "paragraphs",
+          "max_paragraphs": 6
+        }
+      }
+    },
+    "Simple paragraph": {
+      "placeholders": {
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 1777950,
+          "width": 4446587,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18.0,
+          "estimated_capacity_chars": 444,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "1_Simple large title+paragraph": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192088,
+          "y": 1095859,
+          "width": 10449408,
+          "height": 1486250,
+          "text": true,
+          "image": false,
+          "font_size_pt": 40.0,
+          "estimated_capacity_chars": 78,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 2597682,
+          "width": 3721532,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 640,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Simple title+paragraph": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192088,
+          "y": 512764,
+          "width": 3407438,
+          "height": 1486250,
+          "text": true,
+          "image": false,
+          "font_size_pt": 32.0,
+          "estimated_capacity_chars": 32,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 2014587,
+          "width": 3721532,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 874,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "three headliner": {
+      "placeholders": {
+        "14": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 6797459,
+          "y": 1430425,
+          "width": 3721532,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 276,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "15": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 6797459,
+          "y": 2861659,
+          "width": 3721532,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 276,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "16": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 6797459,
+          "y": 4292894,
+          "width": 3721532,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 276,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "17": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198968,
+          "y": 1430425,
+          "width": 6407572,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 13,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "18": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198968,
+          "y": 2859175,
+          "width": 6407572,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 13,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "19": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198968,
+          "y": 4287925,
+          "width": 6407572,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 13,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198968,
+          "y": 531015,
+          "width": 8075602,
+          "height": 899410,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 348,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Two columns": {
+      "placeholders": {
+        "12": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 3286119,
+          "width": 5375960,
+          "height": 3240000,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 1139,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "14": {
+          "name": "Text Placeholder 16",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 1349554,
+          "width": 10848568,
+          "height": 265113,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 117,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "15": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 6065891,
+          "y": 3286119,
+          "width": 5375960,
+          "height": 3240000,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 1139,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192088,
+          "y": 512763,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 36,
+          "estimated_capacity_chars": 45,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "two columns - colorised": {
+      "placeholders": {
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 227012,
+          "y": 512763,
+          "width": 4446587,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18.0,
+          "estimated_capacity_chars": 444,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "14": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 6410835,
+          "y": 512763,
+          "width": 4446587,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18.0,
+          "estimated_capacity_chars": 444,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Three columns": {
+      "placeholders": {
+        "13": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 3287801,
+          "width": 3600000,
+          "height": 3211424,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 330,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "18": {
+          "name": "Text Placeholder 22",
+          "type": "BODY (2)",
+          "x": 4293000,
+          "y": 3287801,
+          "width": 3600000,
+          "height": 3211424,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 330,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "19": {
+          "name": "Text Placeholder 23",
+          "type": "BODY (2)",
+          "x": 8226000,
+          "y": 3287801,
+          "width": 3600000,
+          "height": 3211424,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 330,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192088,
+          "y": 512763,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 36,
+          "estimated_capacity_chars": 45,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "14": {
+          "name": "Text Placeholder 16",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 1349554,
+          "width": 10848568,
+          "height": 265113,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 117,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Four columns": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192088,
+          "y": 512763,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 36,
+          "estimated_capacity_chars": 45,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 197705,
+          "y": 2448000,
+          "width": 2592000,
+          "height": 3240000,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 630,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 3193617,
+          "y": 2448000,
+          "width": 2592000,
+          "height": 3240000,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 630,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "21": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 6189529,
+          "y": 2448000,
+          "width": 2592000,
+          "height": 3240000,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 630,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "22": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 9174475,
+          "y": 2448000,
+          "width": 2592000,
+          "height": 3240000,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 630,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "14": {
+          "name": "Text Placeholder 16",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 1349554,
+          "width": 10848568,
+          "height": 265113,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 117,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "1_>>>>": {
+      "placeholders": {}
+    },
+    "Full bleed image": {
+      "placeholders": {
+        "10": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 0,
+          "y": 0,
+          "width": 12192000,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 2448,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "1_50/50 - image + small title": {
+      "placeholders": {
+        "10": {
+          "name": "Picture Placeholder 7",
+          "type": "PICTURE (18)",
+          "x": 6096000,
+          "y": 0,
+          "width": 6095999,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 1224,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 1079681,
+          "width": 3721532,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 874,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "14": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 512763,
+          "width": 4446587,
+          "height": 566918,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 112,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "50/50 - image + large title": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 198023,
+          "y": 512762,
+          "width": 5207695,
+          "height": 1509763,
+          "text": true,
+          "image": false,
+          "font_size_pt": 32.0,
+          "estimated_capacity_chars": 48,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "10": {
+          "name": "Picture Placeholder 7",
+          "type": "PICTURE (18)",
+          "x": 6096000,
+          "y": 0,
+          "width": 6095999,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 1224,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198023,
+          "y": 2022526,
+          "width": 3721532,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 874,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "1_50/50 - image + medium title": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 198023,
+          "y": 512763,
+          "width": 3721531,
+          "height": 760452,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18.0,
+          "estimated_capacity_chars": 62,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "10": {
+          "name": "Picture Placeholder 7",
+          "type": "PICTURE (18)",
+          "x": 6096000,
+          "y": 0,
+          "width": 6095999,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 1224,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198023,
+          "y": 1300622,
+          "width": 3721532,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 874,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "50/50 - 2rd img+description": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 198023,
+          "y": 512763,
+          "width": 3721531,
+          "height": 760452,
+          "text": true,
+          "image": false,
+          "font_size_pt": 18.0,
+          "estimated_capacity_chars": 62,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "10": {
+          "name": "Picture Placeholder 7",
+          "type": "PICTURE (18)",
+          "x": 6096000,
+          "y": 0,
+          "width": 6095999,
+          "height": 4826000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 816,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198023,
+          "y": 1300622,
+          "width": 3721532,
+          "height": 3671446,
+          "text": true,
+          "image": false,
+          "font_size_pt": 12.0,
+          "estimated_capacity_chars": 874,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "26": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 6109058,
+          "y": 5036185,
+          "width": 4292241,
+          "height": 1463040,
+          "text": true,
+          "image": false,
+          "font_size_pt": 9.0,
+          "estimated_capacity_chars": 720,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "50/50 - big title": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 227012,
+          "y": 512763,
+          "width": 5147875,
+          "height": 3662629,
+          "text": true,
+          "image": false,
+          "font_size_pt": 40.0,
+          "estimated_capacity_chars": 95,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "10": {
+          "name": "Picture Placeholder 7",
+          "type": "PICTURE (18)",
+          "x": 6096000,
+          "y": 0,
+          "width": 6095999,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 1224,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "1_Three columns - images": {
+      "placeholders": {
+        "20": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 193226,
+          "y": 2448000,
+          "width": 3598862,
+          "height": 2160000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 210,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "21": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 4208475,
+          "y": 2448000,
+          "width": 3598862,
+          "height": 2160000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 210,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "22": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 8227138,
+          "y": 2448000,
+          "width": 3598862,
+          "height": 2160000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 210,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192088,
+          "y": 512763,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 24.0,
+          "estimated_capacity_chars": 136,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "14": {
+          "name": "Text Placeholder 16",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 1584000,
+          "width": 10848568,
+          "height": 265113,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 117,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 4716000,
+          "width": 3600000,
+          "height": 1463040,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 392,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "18": {
+          "name": "Text Placeholder 22",
+          "type": "BODY (2)",
+          "x": 4207725,
+          "y": 4716000,
+          "width": 3600000,
+          "height": 1463040,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 392,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "19": {
+          "name": "Text Placeholder 23",
+          "type": "BODY (2)",
+          "x": 8226000,
+          "y": 4716000,
+          "width": 3600000,
+          "height": 1463040,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 392,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Three columns - images scrolled": {
+      "placeholders": {
+        "20": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 193226,
+          "y": 0,
+          "width": 3598862,
+          "height": 5043948,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 510,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "13": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 5215572,
+          "width": 3600000,
+          "height": 1463040,
+          "text": true,
+          "image": false,
+          "font_size_pt": 9.0,
+          "estimated_capacity_chars": 600,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "23": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 4190039,
+          "y": 1814052,
+          "width": 3598862,
+          "height": 5043948,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 510,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "24": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 4174153,
+          "y": 201121,
+          "width": 3600000,
+          "height": 1463040,
+          "text": true,
+          "image": false,
+          "font_size_pt": 9.0,
+          "estimated_capacity_chars": 600,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "25": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 8231097,
+          "y": 0,
+          "width": 3598862,
+          "height": 5043948,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 510,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "26": {
+          "name": "Text Placeholder 17",
+          "type": "BODY (2)",
+          "x": 8229959,
+          "y": 5215572,
+          "width": 3600000,
+          "height": 1463040,
+          "text": true,
+          "image": false,
+          "font_size_pt": 9.0,
+          "estimated_capacity_chars": 600,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Four column - images": {
+      "placeholders": {
+        "13": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 4716000,
+          "width": 2772000,
+          "height": 1327112,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 266,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 192451,
+          "y": 2448000,
+          "width": 2772000,
+          "height": 2160000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 161,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "23": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 3173923,
+          "y": 2448000,
+          "width": 2772000,
+          "height": 2160000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 161,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "24": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 6156121,
+          "y": 2448000,
+          "width": 2772000,
+          "height": 2160000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 161,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "25": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 9156475,
+          "y": 2448000,
+          "width": 2772000,
+          "height": 2160000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 161,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "26": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 3173923,
+          "y": 4716000,
+          "width": 2772000,
+          "height": 1327112,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 266,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "27": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 6156121,
+          "y": 4716000,
+          "width": 2772000,
+          "height": 1327112,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 266,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "28": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 9156475,
+          "y": 4716000,
+          "width": 2772000,
+          "height": 1327112,
+          "text": true,
+          "image": false,
+          "font_size_pt": 11.0,
+          "estimated_capacity_chars": 266,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192088,
+          "y": 512763,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 24.0,
+          "estimated_capacity_chars": 136,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "14": {
+          "name": "Text Placeholder 16",
+          "type": "BODY (2)",
+          "x": 192088,
+          "y": 1584000,
+          "width": 10848568,
+          "height": 265113,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 117,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Statement title - image": {
+      "placeholders": {
+        "10": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 0,
+          "y": 0,
+          "width": 12192000,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 2448,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 198968,
+          "y": 531015,
+          "width": 6407572,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 14.0,
+          "estimated_capacity_chars": 345,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "21": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 610024,
+          "y": 2588415,
+          "width": 10971952,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 23,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Statement - image + highlights": {
+      "placeholders": {
+        "10": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 0,
+          "y": 0,
+          "width": 12192000,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 2448,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 658985,
+          "y": 4622494,
+          "width": 3412953,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 160,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "21": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 4388022,
+          "y": 4622494,
+          "width": 3412953,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 160,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "22": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 8074197,
+          "y": 4622494,
+          "width": 3412953,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 160,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "23": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 610024,
+          "y": 2588415,
+          "width": 10971952,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 23,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Statement - dual image": {
+      "placeholders": {
+        "10": {
+          "name": "Picture Placeholder 3",
+          "type": "PICTURE (18)",
+          "x": 0,
+          "y": 0,
+          "width": 6096000,
+          "height": 6858000,
+          "text": true,
+          "image": true,
+          "font_size_pt": 18,
+          "estimated_capacity_chars": 1224,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "21": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 361950,
+          "y": 2862735,
+          "width": 5361350,
+          "height": 566265,
+          "text": true,
+          "image": false,
+          "font_size_pt": 48.0,
+          "estimated_capacity_chars": 16,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "22": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 6488430,
+          "y": 2862735,
+          "width": 5361350,
+          "height": 566265,
+          "text": true,
+          "image": false,
+          "font_size_pt": 48.0,
+          "estimated_capacity_chars": 16,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "23": {
+          "name": "Platshållare för text 17",
+          "type": "BODY (2)",
+          "x": 198968,
+          "y": 0,
+          "width": 2844800,
+          "height": 358775,
+          "text": true,
+          "image": false,
+          "font_size_pt": 8.0,
+          "estimated_capacity_chars": 106,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "2_>>>>": {
+      "placeholders": {}
+    },
+    "1_Headline only - white bgr": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 653432,
+          "y": 2592209,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 60.0,
+          "estimated_capacity_chars": 27,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "2_Headline only - Red bgr": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 653432,
+          "y": 2592209,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 60.0,
+          "estimated_capacity_chars": 27,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Headline only - Blue bgr": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 653432,
+          "y": 2592209,
+          "width": 10848568,
+          "height": 836791,
+          "text": true,
+          "image": false,
+          "font_size_pt": 60.0,
+          "estimated_capacity_chars": 27,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Headline + paragraph - white bgr": {
+      "placeholders": {
+        "0": {
+          "name": "Title 1",
+          "type": "TITLE (1)",
+          "x": 192087,
+          "y": 512763,
+          "width": 7101847,
+          "height": 5789563,
+          "text": true,
+          "image": false,
+          "font_size_pt": 60.0,
+          "estimated_capacity_chars": 102,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 8515522,
+          "y": 4622494,
+          "width": 3412953,
+          "height": 1679832,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 192,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "21": {
+          "name": "Platshållare för text 17",
+          "type": "BODY (2)",
+          "x": 198968,
+          "y": 0,
+          "width": 2844800,
+          "height": 358775,
+          "text": true,
+          "image": false,
+          "font_size_pt": 8.0,
+          "estimated_capacity_chars": 106,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "Empty page": {
+      "placeholders": {}
+    },
+    "3_>>>>": {
+      "placeholders": {}
+    },
+    "1_End slide - Green": {
+      "placeholders": {
+        "21": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 610024,
+          "y": 2588415,
+          "width": 10971952,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 23,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 205943,
+          "y": 4952922,
+          "width": 3412953,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 160,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "End slide - yellow": {
+      "placeholders": {
+        "21": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 610024,
+          "y": 2588415,
+          "width": 10971952,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 23,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 205943,
+          "y": 4952922,
+          "width": 3412953,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 160,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "End slide - image bgr": {
+      "placeholders": {
+        "21": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 610024,
+          "y": 2588415,
+          "width": 10971952,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 23,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 205943,
+          "y": 4952922,
+          "width": 3412953,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 160,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    },
+    "End slide - Black bgr": {
+      "placeholders": {
+        "21": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 610024,
+          "y": 2588415,
+          "width": 10971952,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 70.0,
+          "estimated_capacity_chars": 23,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        },
+        "20": {
+          "name": "Text Placeholder 6",
+          "type": "BODY (2)",
+          "x": 205943,
+          "y": 4952922,
+          "width": 3412953,
+          "height": 1305860,
+          "text": true,
+          "image": false,
+          "font_size_pt": 16.0,
+          "estimated_capacity_chars": 160,
+          "min_fill_ratio": 0.4,
+          "fill_basis": "characters",
+          "max_paragraphs": null
+        }
+      }
+    }
+  }
+}

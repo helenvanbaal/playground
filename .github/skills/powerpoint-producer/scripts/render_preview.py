@@ -37,6 +37,10 @@ def main() -> int:
     parser.add_argument("--pptx", required=True, help="Path to the .pptx to render")
     parser.add_argument("--outdir", required=True, help="Directory to write slide PNGs into")
     parser.add_argument("--dpi", type=int, default=150, help="Rasterization DPI (default 150)")
+    parser.add_argument(
+        "--slides",
+        help="Comma-separated one-based slide numbers to rasterize (LibreOffice still converts the full deck)",
+    )
     args = parser.parse_args()
 
     pptx_path = Path(args.pptx).expanduser().resolve()
@@ -66,9 +70,19 @@ def main() -> int:
 
     doc = pymupdf.open(str(pdf_path))
     written = []
-    for i in range(doc.page_count):
+    if args.slides:
+        try:
+            page_numbers = sorted({int(value.strip()) for value in args.slides.split(",")})
+        except ValueError as exc:
+            raise SystemExit("--slides must be comma-separated slide numbers, e.g. 2,4") from exc
+        if any(page < 1 or page > doc.page_count for page in page_numbers):
+            raise SystemExit(f"--slides values must be between 1 and {doc.page_count}")
+    else:
+        page_numbers = list(range(1, doc.page_count + 1))
+    for page_number in page_numbers:
+        i = page_number - 1
         pixmap = doc[i].get_pixmap(dpi=args.dpi)
-        png_path = outdir / f"slide-{i + 1:02d}.png"
+        png_path = outdir / f"slide-{page_number:02d}.png"
         pixmap.save(str(png_path))
         written.append(png_path)
     doc.close()

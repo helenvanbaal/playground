@@ -4,7 +4,7 @@
   "type": "object",
   "required": ["title", "slides"],
   "properties": {
-    "title": { "type": "string", "description": "Deck title (for reference; the title slide's own text is set via its slide entry)" },
+    "title": { "type": "string" },
     "audience": { "type": "string" },
     "purpose": { "type": "string" },
     "slides": {
@@ -16,158 +16,48 @@
   "definitions": {
     "slide": {
       "type": "object",
-      "required": ["layout", "key_message"],
+      "required": ["layout"],
       "properties": {
         "layout": {
           "type": "string",
-          "enum": [
-            "title",
-            "section-divider",
-            "big-statement",
-            "two-column",
-            "three-or-four-column",
-            "image-and-text",
-            "big-number-stat",
-            "comparison",
-            "timeline",
-            "closing"
-          ],
-          "description": "One of the named layouts in references/layouts.md. No other value is valid."
+          "description": "Exact real layout name from layouts.json; never a role or synthesized layout."
         },
         "key_message": {
           "type": "string",
-          "description": "The one-sentence takeaway this slide exists to deliver. Used for planning/review; also usually becomes the slide title."
+          "description": "The slide's main point, used for planning."
         },
-        "visual_element": {
-          "type": "string",
-          "enum": ["none", "bullets", "chart", "table", "image", "dual-image", "big-number", "timeline"],
-          "description": "What actually carries the content -- used to check 'prefer a visual to a bullet list' during planning."
+        "text": {
+          "type": "object",
+          "description": "Text keyed by the chosen layout's real placeholder idx.",
+          "patternProperties": {
+            "^[0-9]+$": { "type": "string" }
+          },
+          "additionalProperties": false
         },
-        "mood": {
-          "type": "string",
-          "description": "Which template mood/color variant to use for this layout (see references/layouts.md for valid moods per layout)."
-        },
-        "title": { "type": "string" },
-        "subtitle": { "type": "string" },
-        "kicker": { "type": "string", "description": "One-line lead/eyebrow text shown above the body on some layouts." },
-        "heading": { "type": "string", "description": "Big heading word for section-divider slides (e.g. 'Agenda')." },
-        "headline": { "type": "string", "description": "Large statement/closing text; falls back to 'title' if omitted." },
-        "caption": { "type": "string" },
-        "body": { "type": "string", "description": "Short paragraph for single-body layouts. Max ~40 words." },
-        "bullets": {
-          "type": "array",
-          "items": { "type": "string" },
-          "maxItems": 5,
-          "description": "Max 5 bullets, each ideally under 10 words."
-        },
-        "items": {
-          "type": "array",
-          "items": { "type": "string" },
-          "description": "Agenda/section-divider list items."
-        },
-        "columns": {
-          "type": "array",
-          "minItems": 2,
-          "maxItems": 4,
-          "items": {
-            "oneOf": [
-              { "type": "string" },
-              {
-                "type": "object",
-                "properties": {
-                  "heading": { "type": "string" },
-                  "body": { "type": "string" },
-                  "image": { "$ref": "#/definitions/image" }
-                }
-              }
-            ]
-          }
-        },
-        "image": { "$ref": "#/definitions/image" },
         "images": {
-          "type": "array",
-          "minItems": 2,
-          "maxItems": 2,
-          "items": { "$ref": "#/definitions/image" },
-          "description": "Exactly two images for the comparison dual-image layout."
-        },
-        "stats": {
-          "type": "array",
-          "maxItems": 3,
-          "items": {
-            "type": "object",
-            "required": ["number", "label"],
-            "properties": {
-              "number": {
-                "type": "string",
-                "description": "e.g. '40%'. Keep this to a bare number/short unit -- it renders alone at ~70pt; a full sentence here overflows into the next row."
-              },
-              "label": {
-                "type": "string",
-                "description": "e.g. 'revenue growth in Q3'. Renders as small annotation text next to the number, not as part of the big number itself."
-              },
-              "note": { "type": "string", "description": "Optional second small annotation/source line, shown after the label." }
-            }
-          }
-        },
-        "chart": {
           "type": "object",
-          "required": ["type", "categories", "series"],
-          "properties": {
-            "type": { "type": "string", "enum": ["bar", "column", "line", "pie"] },
-            "categories": { "type": "array", "items": { "type": "string" } },
-            "series": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "required": ["name", "values"],
-                "properties": {
-                  "name": { "type": "string" },
-                  "values": { "type": "array", "items": { "type": "number" } }
+          "description": "Image paths keyed by real picture-placeholder idx.",
+          "patternProperties": {
+            "^[0-9]+$": {
+              "oneOf": [
+                { "type": "string" },
+                {
+                  "type": "object",
+                  "required": ["path"],
+                  "properties": {
+                    "path": { "type": "string" },
+                    "alt": { "type": "string" }
+                  },
+                  "additionalProperties": false
                 }
-              }
+              ]
             }
-          }
+          },
+          "additionalProperties": false
         },
-        "table": {
-          "type": "object",
-          "properties": {
-            "columns": { "type": "array", "items": { "type": "string" } },
-            "rows": {
-              "type": "array",
-              "items": { "type": "array", "items": { "type": "string" } }
-            }
-          }
-        },
-        "timeline": {
-          "type": "object",
-          "required": ["milestones"],
-          "properties": {
-            "milestones": {
-              "type": "array",
-              "maxItems": 6,
-              "items": {
-                "type": "object",
-                "required": ["label"],
-                "properties": {
-                  "label": { "type": "string" },
-                  "size": { "type": "string", "enum": ["big", "small"] }
-                }
-              }
-            }
-          }
-        },
-        "notes": { "type": "string", "description": "Speaker notes carrying the detail not shown on the slide." }
-      }
-    },
-    "image": {
-      "type": "object",
-      "required": ["path"],
-      "properties": {
-        "path": { "type": "string" },
-        "alt": { "type": "string" },
-        "caption": { "type": "string" }
-      }
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
     }
   }
 }
