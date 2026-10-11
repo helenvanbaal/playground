@@ -23,8 +23,8 @@ charts/tables outside the template's layouts.
 - [`scripts/generate_deck.py`](scripts/generate_deck.py) fills only native
   placeholders. Outline `layout` values must exactly match a real template
   layout name; text and image values are keyed by the placeholder `idx` listed
-  in the catalogue. It also removes the copyright text box from the slide
-  master and layouts so it does not appear in generated decks.
+  in the catalogue. It also removes copyright and leftover tracker-demo text
+  from masters/layouts so they do not appear in generated decks.
 - [`scripts/lint_deck.py`](scripts/lint_deck.py) checks placeholder use,
   approximate text capacity, low placeholder fill, font overrides, and
   out-of-slide geometry.

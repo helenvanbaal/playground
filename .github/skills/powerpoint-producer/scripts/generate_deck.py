@@ -64,14 +64,16 @@ def main() -> int:
 
 
 def remove_copyright(presentation) -> None:
-    """Remove the inherited copyright line and layout-level duplicates."""
+    """Remove inherited copyright and placeholder-demo text from generated decks."""
     for master in presentation.slide_masters:
         for shape in list(master.shapes):
             if shape.has_text_frame and "© Ingka Holding B.V." in shape.text:
                 shape._element.getparent().remove(shape._element)
         for layout in master.slide_layouts:
             for shape in list(layout.shapes):
-                if shape.has_text_frame and "© Ingka Holding B.V." in shape.text:
+                if shape.has_text_frame and (
+                    "© Ingka Holding B.V." in shape.text or shape.text.strip() == "TRACKER TEXT"
+                ):
                     shape._element.getparent().remove(shape._element)
 
 
