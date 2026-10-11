@@ -1,6 +1,6 @@
 ---
 name: powerpoint-producer
-description: "Create and redesign PowerPoint decks using the S&D template's real layouts and placeholders. Builds an editable outline, runs a fast structural lint, and renders a preview for visual review."
+description: "Create and redesign PowerPoint decks using the S&D template's real layouts and placeholders. Builds a varied visual story, runs a fast structural lint, and renders a preview for visual review."
 argument-hint: "Create a PowerPoint from this information. Mention audience, purpose, and desired length if known."
 user-invocable: true
 disable-model-invocation: false

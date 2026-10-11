@@ -67,7 +67,8 @@ def main() -> int:
             if fill_ratio is not None and threshold is not None and fill_ratio < threshold:
                 warnings.append(
                     f"Slide {slide_number}, placeholder idx={idx}: estimated fill "
-                    f"{fill_ratio:.0%} is below {threshold:.0%}; review whether this layout is too dense"
+                    f"{fill_ratio:.0%} is below {threshold:.0%}; consider a larger-type layout or different composition "
+                    "before adding source-supported detail"
                 )
             floor = metadata.get("font_size_pt")
             if floor:
