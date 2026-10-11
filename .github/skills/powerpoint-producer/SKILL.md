@@ -44,11 +44,35 @@ their real layouts. It does not clone sample compositions.
 
 1. Identify the audience, purpose, source material, and desired length. Do not
    invent facts, metrics, or quotes; mark missing details `[to confirm]`.
-2. Draft the outline JSON first. Choose a **real layout** by name from
-   `layouts.json`, then select only the placeholders appropriate to that
-   layout. Match content volume to the placeholder's capacity and the real
-   examples; do not fill a dense layout with a few isolated labels.
-3. Generate and lint:
+2. Plan the deck's visual rhythm before writing the full outline. Make a
+   slide-by-slide run of show that alternates appropriate real layout families
+   (for example: statement, comparison, big-number, agenda, image) and moods.
+   Avoid using the same layout three slides in a row or letting one layout
+   family dominate the content slides. Repetition is fine when the story truly
+   calls for a repeated structure, but it should be a conscious choice.
+3. Choose a **real layout** by exact name from `layouts.json`, then select only
+   its native placeholders. Match the amount and shape of content to the
+   layout, not vice versa:
+   - If a slide has only one or two short points, prefer an intentionally
+     spacious layout with a large headline, big-number, or color panel. Do not
+     park a few short lines in a dense or narrow-column layout.
+   - For several genuinely parallel facts, use columns or a comparison
+     composition; for a sequence, use the template's agenda/list layout.
+   - When a slide looks empty, first choose a more suitable real layout or a
+     larger-type layout variant. Add detail only when it is supported by the
+     source; never pad copy to satisfy a fill percentage.
+   - Use distinct template background moods (black, white, yellow, blue, red)
+     where they support the story: keep color-field slides for emphasis or
+     transitions, and use light layouts for detailed comparison. Do not apply
+     one background treatment to every slide.
+   - Never fake photography or leave empty image placeholders. If no real
+     images are available, choose a photo-free layout from the catalogue.
+   - Respect the layout's actual type scale. Avoid narrow-column layouts when
+     their small template type makes the copy hard to read; choose a wider
+     placeholder or a larger-type composition instead of shrinking text.
+   Keep the outline's `key_message` and notes, but write visible content in
+   `text` and `images` using the selected layout's real placeholder indices.
+4. Generate and lint:
 
    ```bash
    python3 .github/skills/powerpoint-producer/scripts/generate_deck.py \
@@ -58,10 +82,13 @@ their real layouts. It does not clone sample compositions.
      --catalog .github/skills/powerpoint-producer/layouts.json
    ```
 
-   Text capacity and the 40% fill threshold are estimates, not hard rendering
-   limits. Treat low-fill warnings as a prompt to reconsider the layout, not a
-   mandate to add copy. Fix all structural errors.
-4. Render all slides once for visual review:
+   Text capacity and fill are estimates, not hard rendering limits. Treat
+   under-fill warnings as a prompt to reconsider that placeholder/layout, and
+   repeated-family warnings as a prompt to improve visual rhythm. Fix them by
+   changing to a better-fitting layout or, only when source-supported, adding
+   missing content. Do not waive a whole-deck pattern just because each slide
+   is structurally valid.
+5. Render all slides once for visual review:
 
    ```bash
    python3 .github/skills/powerpoint-producer/scripts/render_preview.py \
@@ -71,7 +98,7 @@ their real layouts. It does not clone sample compositions.
    Check for obvious clipping, overlaps, missing text, and elements outside
    the safe area. If you revise slides, rerender only those slide images with
    `--slides 2,4`; LibreOffice still converts the complete deck to PDF.
-5. Use a separate reviewer only when requested or when the deck is high-stakes.
+6. Use a separate reviewer only when requested or when the deck is high-stakes.
    Deliver the named `.pptx`, outline path, slide count, unresolved
    `[to confirm]` markers, and any preview limitations.
 

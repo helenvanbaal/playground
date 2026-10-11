@@ -25,10 +25,12 @@ def main() -> int:
     presentation = Presentation(str(Path(args.pptx).expanduser().resolve()))
     errors: list[str] = []
     warnings: list[str] = []
+    layout_sequence: list[str] = []
     slide_width, slide_height = presentation.slide_width, presentation.slide_height
 
     for slide_number, slide in enumerate(presentation.slides, start=1):
         layout_name = slide.slide_layout.name
+        layout_sequence.append(layout_name)
         layout = layouts.get(layout_name)
         if layout is None:
             errors.append(f"Slide {slide_number}: layout {layout_name!r} is not in the catalogue")
@@ -77,6 +79,34 @@ def main() -> int:
                                 f"font {run.font.size.pt:g}pt is below layout size {floor:g}pt"
                             )
 
+    content_layouts = [
+        name for name in layout_sequence
+        if not name.startswith("Title -") and not name.startswith("End slide") and not name.startswith("1_End slide")
+    ]
+    family_counts: dict[str, int] = {}
+    for name in content_layouts:
+        family = layout_family(name)
+        family_counts[family] = family_counts.get(family, 0) + 1
+    if content_layouts:
+        dominant_family, dominant_count = max(family_counts.items(), key=lambda item: item[1])
+        if dominant_count / len(content_layouts) > 0.6:
+            warnings.append(
+                f"Visual rhythm: {dominant_family} layouts make up "
+                f"{dominant_count}/{len(content_layouts)} content slides; vary the composition if the story allows"
+            )
+
+    run_start = 0
+    while run_start < len(layout_sequence):
+        run_end = run_start + 1
+        while run_end < len(layout_sequence) and layout_sequence[run_end] == layout_sequence[run_start]:
+            run_end += 1
+        if run_end - run_start >= 3:
+            warnings.append(
+                f"Visual rhythm: layout {layout_sequence[run_start]!r} repeats "
+                f"for slides {run_start + 1}–{run_end}; consider a purposeful variation"
+            )
+        run_start = run_end
+
     for warning in warnings:
         print(f"WARNING: {warning}")
     for error in errors:
@@ -86,6 +116,24 @@ def main() -> int:
         return 1
     print(f"Deck lint passed: {len(presentation.slides)} slides, {len(warnings)} layout-fit warning(s)")
     return 0
+
+
+def layout_family(layout_name: str) -> str:
+    """Group layouts by broad composition, independent of exact mood variants."""
+    name = layout_name.lower()
+    if "column" in name:
+        return "column"
+    if "headline" in name or "statement" in name or "big title" in name:
+        return "statement"
+    if "headliner" in name:
+        return "big-number"
+    if "agenda" in name:
+        return "agenda"
+    if "image" in name:
+        return "image"
+    if "paragraph" in name:
+        return "paragraph"
+    return "other"
 
 
 if __name__ == "__main__":
