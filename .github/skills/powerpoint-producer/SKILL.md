@@ -25,7 +25,8 @@ charts/tables outside the template's layouts.
   layout name; text and image values are keyed by the placeholder `idx` listed
   in the catalogue. It also normalizes the inherited copyright line once on
   the slide master to 6pt Noto IKEA Latin in brand grey, keeping its placement
-  consistent and subdued across slides.
+  consistent and subdued across slides, removes duplicate layout-level marks,
+  and enables that master mark on the title layout.
 - [`scripts/lint_deck.py`](scripts/lint_deck.py) checks placeholder use,
   approximate text capacity, low placeholder fill, font overrides, and
   out-of-slide geometry.

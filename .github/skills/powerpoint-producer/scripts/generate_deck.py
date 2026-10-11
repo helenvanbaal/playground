@@ -71,16 +71,17 @@ def main() -> int:
 
 def normalize_copyright(presentation) -> None:
     """Give the inherited copyright line one fixed, subdued style in every deck."""
-    matches = [
-        shape
-        for master in presentation.slide_masters
-        for shape in master.shapes
-        if shape.has_text_frame and "© Ingka Holding B.V." in shape.text
-    ]
+    matches = []
+    for master in presentation.slide_masters:
+        matches.extend(
+            shape for shape in master.shapes
+            if shape.has_text_frame and "© Ingka Holding B.V." in shape.text
+        )
     if len(matches) != 1:
         raise SystemExit(f"Expected one master copyright text box; found {len(matches)}")
 
-    text_frame = matches[0].text_frame
+    copyright_shape = matches[0]
+    text_frame = copyright_shape.text_frame
     text_frame.clear()
     paragraph = text_frame.paragraphs[0]
     run = paragraph.add_run()
@@ -88,6 +89,14 @@ def normalize_copyright(presentation) -> None:
     run.font.name = BRAND_FONT
     run.font.size = Pt(COPYRIGHT_FONT_SIZE_PT)
     run.font.color.rgb = COPYRIGHT_COLOR
+
+    for master in presentation.slide_masters:
+        for layout in master.slide_layouts:
+            for shape in list(layout.shapes):
+                if shape.has_text_frame and "© Ingka Holding B.V." in shape.text:
+                    shape._element.getparent().remove(shape._element)
+            if layout.name == "Title - Black":
+                layout._element.set("showMasterSp", "1")
 
 
 def load_json(path: Path, label: str) -> dict[str, Any]:
