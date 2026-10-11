@@ -85,11 +85,11 @@
       }
     },
     {
-      "layout": "1_End slide - Green",
+      "layout": "1_Simple large title+paragraph",
       "key_message": "Make visiting IKEA the best part of making a home.",
       "text": {
-        "21": "Let's make visiting",
-        "20": "IKEA the best part of making a home."
+        "0": "Let's make visiting IKEA the best part of making a home.",
+        "13": "A 3-store pilot proposal."
       }
     }
   ]
