@@ -16,8 +16,6 @@ from typing import Any
 
 try:
     from pptx import Presentation
-    from pptx.dml.color import RGBColor
-    from pptx.util import Pt
 except ImportError as exc:  # pragma: no cover
     raise SystemExit(
         "Missing dependency: python-pptx. Install it with: "
@@ -27,10 +25,6 @@ except ImportError as exc:  # pragma: no cover
 
 DEFAULT_TEMPLATE_PATH = Path(__file__).resolve().parents[1] / "assets" / "base-template.pptx"
 DEFAULT_CATALOG_PATH = Path(__file__).resolve().parents[1] / "layouts.json"
-COPYRIGHT_TEXT = "© Ingka Holding B.V. 2026"
-COPYRIGHT_COLOR = RGBColor(0x57, 0x57, 0x57)
-COPYRIGHT_FONT_SIZE_PT = 6
-BRAND_FONT = "Noto IKEA Latin"
 
 
 def main() -> int:
@@ -46,7 +40,7 @@ def main() -> int:
     if not template_path.exists():
         raise SystemExit(f"Template not found: {template_path}")
     presentation = Presentation(str(template_path))
-    normalize_copyright(presentation)
+    remove_copyright(presentation)
 
     if args.inspect_template:
         inspect_template(presentation)
@@ -69,34 +63,16 @@ def main() -> int:
     return 0
 
 
-def normalize_copyright(presentation) -> None:
-    """Give the inherited copyright line one fixed, subdued style in every deck."""
-    matches = []
+def remove_copyright(presentation) -> None:
+    """Remove the inherited copyright line and layout-level duplicates."""
     for master in presentation.slide_masters:
-        matches.extend(
-            shape for shape in master.shapes
-            if shape.has_text_frame and "© Ingka Holding B.V." in shape.text
-        )
-    if len(matches) != 1:
-        raise SystemExit(f"Expected one master copyright text box; found {len(matches)}")
-
-    copyright_shape = matches[0]
-    text_frame = copyright_shape.text_frame
-    text_frame.clear()
-    paragraph = text_frame.paragraphs[0]
-    run = paragraph.add_run()
-    run.text = COPYRIGHT_TEXT
-    run.font.name = BRAND_FONT
-    run.font.size = Pt(COPYRIGHT_FONT_SIZE_PT)
-    run.font.color.rgb = COPYRIGHT_COLOR
-
-    for master in presentation.slide_masters:
+        for shape in list(master.shapes):
+            if shape.has_text_frame and "© Ingka Holding B.V." in shape.text:
+                shape._element.getparent().remove(shape._element)
         for layout in master.slide_layouts:
             for shape in list(layout.shapes):
                 if shape.has_text_frame and "© Ingka Holding B.V." in shape.text:
                     shape._element.getparent().remove(shape._element)
-            if layout.name == "Title - Black":
-                layout._element.set("showMasterSp", "1")
 
 
 def load_json(path: Path, label: str) -> dict[str, Any]:
