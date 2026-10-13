@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PowerPoint producer outline",
+  "type": "object",
+  "required": ["title", "slides"],
+  "properties": {
+    "title": { "type": "string" },
+    "audience": { "type": "string" },
+    "purpose": { "type": "string" },
+    "slides": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/slide" }
+    }
+  },
+  "definitions": {
+    "slide": {
+      "type": "object",
+      "required": ["layout"],
+      "properties": {
+        "layout": {
+          "type": "string",
+          "description": "Exact real layout name from layouts.json; never a role or synthesized layout."
+        },
+        "key_message": {
+          "type": "string",
+          "description": "The slide's main point, used for planning."
+        },
+        "text": {
+          "type": "object",
+          "description": "Text keyed by the chosen layout's real placeholder idx.",
+          "patternProperties": {
+            "^[0-9]+$": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "images": {
+          "type": "object",
+          "description": "Image paths keyed by real picture-placeholder idx.",
+          "patternProperties": {
+            "^[0-9]+$": {
+              "oneOf": [
+                { "type": "string" },
+                {
+                  "type": "object",
+                  "required": ["path"],
+                  "properties": {
+                    "path": { "type": "string" },
+                    "alt": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
